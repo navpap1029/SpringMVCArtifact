@@ -14,7 +14,7 @@ body {
 			Hey You..!! This is your 1st Spring MCV Tutorial with some modified content..<br> <br>
 		</h2>
 		<h3>
-			<a href="hello.jsp">Click here to See Welcome Message... </a>(to
+			<a href="hello.jsp">Click here to See Welcome Message after changes... </a>(to
 			check Spring MVC Controller... @RequestMapping("/hello"))
 		</h3>
 	</div>
