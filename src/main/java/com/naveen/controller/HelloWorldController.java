@@ -1,20 +1,19 @@
 package com.naveen.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
 
-public class HelloWorldController extends AbstractController{
+@Controller
+public class HelloWorldController {
 
-    @Override
-    protected ModelAndView handleRequestInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+    @RequestMapping("/hello")
+    public ModelAndView firstController() {
         System.out.println("Reaching contoller method");
         String message = "<br><div style='text-align:center;'>"
-                + "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from CrunchifyHelloWorld.java **********</div><br><br>";
-        return new ModelAndView("hello", "message", message);
-//        ModelAndView mv = new ModelAndView("hello");
-//        mv.addObject("message", "this is the message");
-//        return mv;
+                + "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from HelloWorldController.java **********</div><br><br>";
+        ModelAndView mv = new ModelAndView("view1");
+        mv.addObject("message", message);
+        return mv;
     }
 }

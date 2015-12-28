@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>SpringMVCGroup</groupId>
-    <artifactId>SpringMVCArtifact</artifactId>
+    <artifactId>SpringMVCNaveen</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
